@@ -10,28 +10,43 @@ import ContactUs from './Pages/Contactus';
 import SubcribeYourMail from './Pages/Subscribemail';
 import { FooterContainer } from './Components/Containers/footer';    
 import HomeSec1 from './Components/HomeSec1';
+import  styled from 'styled-components';
+import { AccountBox } from './Components/accountBox/index';
 
+
+const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 function App (){
-    
 return (
-
-<> 
+<>
     <Router>
-           <Navbar/>
-           <Switch>
+       <Navbar/>
+       <Switch>
             <Route path='./home' exact component={Home} />
             <Route path='/how'  component={ HowDoesItWork} />
             <Route path='/about'   component={AboutUs} />
             <Route path='/contact'  component={ContactUs} />
             <Route path='/subscribe'   component={SubcribeYourMail} />
-            </Switch>
-           <HomeSec1/>
+          </Switch>
+          <br/>
+          <br/>
+
+          <AppContainer>
+             <AccountBox />
+           </AppContainer>
+       <HomeSec1/>
            
            
             
             
-            <FooterContainer/>
+       <FooterContainer/>
            
     </Router>
     
@@ -40,7 +55,20 @@ return (
 }
 export default App;
  
+/*
 
+          <AppContainer>
+             <AccountBox />
+           </AppContainer>
+ const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+*/
 /*export const useBreakpoints = () => {
     const isMobileSmall = useMediaQuery({ query: '(max-width: 325px)' });
     const isMobileMid = useMediaQuery({ query: '(max-width: 375px)' });

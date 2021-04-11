@@ -1,12 +1,15 @@
  export const MenueItems = [
         {
             title : 'signup',
-            url : '#',
+            url : './../signUpIn',
             cName :' nav-links'
         },
         {
             title : 'login',
-            url : '#',
+            url : './../signUpIn',
             cName :' nav-links'
         }
     ]
+
+
+    

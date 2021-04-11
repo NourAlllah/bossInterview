@@ -9,6 +9,8 @@ import { SideBarData } from './../SideBarData';
 
 
 
+
+
    
     function Navbar () { 
         const [sidebar , setSidebar] = useState(false);
@@ -25,19 +27,23 @@ import { SideBarData } from './../SideBarData';
                     <Link  to='/' className='menu-icon' >
                         <i class="fas fa-bars" onClick={showSidebar} ></i>
                     </Link> 
+
                     <img className='navbar-logo' src='..\logo.png' alt ='..\logo192.png'/>
-                    <ul className='navbar-but'>
-                    {MenueItems.map ( (item,index)=> {
-                        return(
-                            <li key={index}> 
-                                <a className={item.cName} href={item.url} >
-                                     {item.title}
-                                </a>
-                            </li>
-                        ); 
-                        }
-                    )}
-                    </ul>
+                  
+                            
+                                <ul className='navbar-but'>
+                                {MenueItems.map ( (item,index)=> {
+                                    return(
+                                        <li key={index}> 
+                                            <Link  to='' className={item.cName}  path={item.url}>
+                                                {item.title}
+                                            </Link>
+                                        </li>
+                                    ); 
+                                    }
+                                )}
+                                </ul>
+                            
                     <div className ='nav-shadow'></div>
              </div>
             <nav className={sidebar?'nav-menu active' : 'nav-menu'} >  
