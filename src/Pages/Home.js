@@ -1,12 +1,12 @@
 import { React } from 'react';
-
+import HomeSec1 from './../Components/HomeSec1';
 
 
 function Home () {
     return (
-        <div className='Home'> 
-            <h1>Home bitches</h1>
-        </div>
+        <>
+          <HomeSec1/>
+        </>
     )
 }
 export default Home;

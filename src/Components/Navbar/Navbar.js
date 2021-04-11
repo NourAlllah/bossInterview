@@ -8,10 +8,11 @@ import { SideBarData } from './../SideBarData';
 
 
 
+
    
     function Navbar () { 
         const [sidebar , setSidebar] = useState(false);
-
+       
 
         const showSidebar = () => setSidebar (!sidebar);
         
@@ -62,6 +63,7 @@ import { SideBarData } from './../SideBarData';
 
                 </ul>
                 
+                
             </nav>
            
          </>   
@@ -70,3 +72,4 @@ import { SideBarData } from './../SideBarData';
     }
 
 export default Navbar;
+   /* <div className ='nav-shadow'></div>*/
