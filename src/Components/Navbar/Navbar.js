@@ -1,22 +1,14 @@
-import  React ,{useState } from 'react';
+import  React , {useState } from 'react';
 import './Navbar.css';
-import { MenueItems } from './MenueItems';
-import {Link} from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import { SideBarData } from './../SideBarData';
 
 
 
-
-
-
-
-
-   
-    function Navbar () { 
+     const Navbar = (props) => { 
         const [sidebar , setSidebar] = useState(false);
-       
-
         const showSidebar = () => setSidebar (!sidebar);
+      
         
         
         return (   
@@ -24,34 +16,30 @@ import { SideBarData } from './../SideBarData';
             
             
             <div className='navbar'>
-                    <Link  to='/' className='menu-icon' >
-                        <i class="fas fa-bars" onClick={showSidebar} ></i>
-                    </Link> 
-
-                    <img className='navbar-logo' src='..\logo.png' alt ='..\logo192.png'/>
-                  
+                 <Link to='#' className='menu-icon' >
+                    <i className="fas fa-bars" onClick={showSidebar} ></i>
+                 </Link> 
+             <Link  to ='/about' >
+            <img className='navbar-logo' src='../logo.png' alt ='../logo192.png'/>
+            </Link>
+            <button className='navbar-but'>   
+                 <Link to='/signupin' className='nav-links'>
+                     Log In
+                 </Link>        
+            </button>         
+            </div>           
+                         
+                        
+                                
                             
-                                <ul className='navbar-but'>
-                                {MenueItems.map ( (item,index)=> {
-                                    return(
-                                        <li key={index}> 
-                                            <Link  to='' className={item.cName}  path={item.url}>
-                                                {item.title}
-                                            </Link>
-                                        </li>
-                                    ); 
-                                    }
-                                )}
-                                </ul>
-                            
-                    <div className ='nav-shadow'></div>
-             </div>
+                    
+            
             <nav className={sidebar?'nav-menu active' : 'nav-menu'} >  
                 
                 <ul className='navbar-items' onClick={showSidebar} >
                     <li className ='navbar-toggle'>
-                        <Link to='/' className='menu-icon '>
-                            <i class="fas fa-times"></i>
+                        <Link to='#'  exact ='true' className='menu-icon '>
+                            <i className="fas fa-times"></i>
                          </Link>
                     </li>
                      {SideBarData.map( (item,index) => {
@@ -65,11 +53,7 @@ import { SideBarData } from './../SideBarData';
                               </Link>
                           </li> );
                      })}
-                     
-
-                </ul>
-                
-                
+                </ul> 
             </nav>
            
          </>   
@@ -78,4 +62,31 @@ import { SideBarData } from './../SideBarData';
     }
 
 export default Navbar;
-   /* <div className ='nav-shadow'></div>*/
+   /* <div className ='nav-shadow'></div>
+   
+   
+                             <ul className='navbar-but'>
+                                {MenueItems.map ( (item,index)=> {
+                                    return(
+                                        <button   to={signUpIn} key={index} className={item.cName}> 
+                                            
+                                            {item.title} 
+                                            
+                                        </button>
+                                    ); }
+                                )}
+                             </ul>
+   ********************************************************
+      const [toSign ,setToSign] = useState(true);
+
+        if (!toSign) {
+            return <Redirect  to={signUpIn}/>
+        }
+
+   
+   
+   <Link to='/signupin'>
+                         Sign Up/In 
+                         </Link>
+   
+   */

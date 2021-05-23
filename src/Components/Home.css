@@ -1,0 +1,54 @@
+video{
+    object-fit :cover ;
+    width:100%;
+    height: 100%;
+    position:absolute;
+    z-index: -1;
+}
+.section1-container{
+    /*background: Url('..\home-sec1.png') center center/cover no-repeat;*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+}
+
+
+
+/*    
+.section1-container{
+    background: Url('..\home-sec1.png') center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+}
+
+
+
+
+******** css alvideo f section 1 *******
+    video{
+    object-fit :cover ;
+    width:100%;
+    height: 100%;
+    position:absolute;
+    z-index: -1;
+} 
+
+******** css sora w bayz f blash ***** 
+.sec1-img{
+    object-fit:fill;
+    display:block;
+    position:absolute;
+    width: fit-content;
+}
+
+
+
+
+*/

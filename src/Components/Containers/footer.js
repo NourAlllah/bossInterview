@@ -30,10 +30,10 @@ export  function FooterContainer (){
                 </Footer.Column>
                 <Footer.Column>
                     <Footer.Tittle> Social </Footer.Tittle>
-                    <Footer.Link href='#'><i class="fab fa-facebook-f"> </i>Facebook</Footer.Link>
-                    <Footer.Link href='#'><i class="fab fa-instagram"> </i> Instgram</Footer.Link>
-                    <Footer.Link href='#'><i class="fab fa-twitter"></i> Twitter </Footer.Link>
-                    <Footer.Link href='#'> <i class="fab fa-youtube"></i>Youtube </Footer.Link>
+                    <Footer.Link href='#'><i className="fab fa-facebook-f"> </i>Facebook</Footer.Link>
+                    <Footer.Link href='#'><i className="fab fa-instagram"> </i> Instgram</Footer.Link>
+                    <Footer.Link href='#'><i className="fab fa-twitter"></i> Twitter </Footer.Link>
+                    <Footer.Link href='#'> <i className="fab fa-youtube"></i>Youtube </Footer.Link>
                 </Footer.Column>
                 </Footer.Row>
             </Footer.Wrapper>

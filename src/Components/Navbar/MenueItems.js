@@ -1,15 +1,19 @@
- export const MenueItems = [
+ 
+ 
+export const MenueItems = [
         {
             title : 'signup',
-            url : './../signUpIn',
+            url : '/loginForm',
             cName :' nav-links'
         },
         {
             title : 'login',
-            url : './../signUpIn',
+            url : '/signupForm',
             cName :' nav-links'
         }
     ]
 
-
+/* import { LoginForm } from './../accountBox/loginForm';
+ import { SignupForm } from './../accountBox/signupForm';
+ */
     
