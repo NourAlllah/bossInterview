@@ -1,6 +1,8 @@
 import  React  from 'react';
 import { Container, Wrapper ,Row ,Column , Link ,Tittle } from "./styles/footer";
 
+
+
 export default function Footer ({children , ...restProps}) {
     return <Container {...restProps}>
         {children}
@@ -31,3 +33,4 @@ Footer.Tittle = function FootTittle ({children, ...restProps}){
         {children}
     </Tittle>
 }
+

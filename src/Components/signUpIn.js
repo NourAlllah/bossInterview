@@ -1,5 +1,4 @@
  import React from 'react'
- 
  import { AccountBox } from './accountBox/index';
  import  styled from 'styled-components';
 
@@ -16,10 +15,7 @@
  function signUpIn() {
      return (
         <>    
-           <br/>
-           <br/>
-           <br/>
-           <br/>
+          
            <br/>
            <br/>
            <br/>
@@ -27,14 +23,12 @@
                <AccountBox />
             </AppContainer>
            <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
+           
+           
             
         </>
      )
  }
  
- export default signUpIn
+ export default signUpIn;
  

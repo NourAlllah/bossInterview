@@ -27,7 +27,6 @@ return (
      <Navbar/>
 
   
-    
      
         <Switch>
             <Route  path='/'  exact component={Home} />
@@ -40,7 +39,13 @@ return (
             <Route path='/signupin' component={signUpIn}/>
             <Redirect to='/404'/>
          </Switch>
-            
+
+        <br/>
+    <br/>  <br/>
+    <br/>  <br/>
+    <br/>  <br/>
+    <br/>  <br/>
+    <br/>      
     <FooterContainer/>  
 
           

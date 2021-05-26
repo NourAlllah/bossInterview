@@ -6,6 +6,18 @@ import './footer.css';
 export  function FooterContainer (){
     return (
         <Footer>
+             
+             <p  className='text-5'>  Handcrafted & curated material for every stage of career grooming </p> 
+             <p className='text-55'> & industry insights, delivered to your inbox.</p>
+                
+             <div className='subscribe-mail-form-footer'>
+                    <input className='input-email-footer' type="email" placeholder="Enter your Email" aria-required='true'  aria-invalid='true'/>
+                    <button className='subscribe-but-footer' variant="primary" type="submit">
+                        Submit
+                    </button>
+             </div>
+             <br/>
+             <br/>
             <Footer.Wrapper>
                 <Footer.Row>
                 <Footer.Column>
