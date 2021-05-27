@@ -4,7 +4,9 @@ import "./Components/fonawesome";
 import { BrowserRouter as Router,  Redirect,  Route ,Switch} from 'react-router-dom';
 
 
+
 /* PAGES */
+import Profile from './Components/Profile/Profile';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar/Navbar';
 import HowDoesItWork from './Pages/Howdoesitworks';
@@ -18,7 +20,9 @@ import signUpIn from './Components/signUpIn';
 
 
 
+
 function App (){
+  
 return (
 <>
 
@@ -37,6 +41,7 @@ return (
             <Route path='/faqs' component={Faqs}/>
             <Route path='/404' component={NotFound}/>
             <Route path='/signupin' component={signUpIn}/>
+            <Route path='/profile' component= {Profile}/>
             <Redirect to='/404'/>
          </Switch>
 
