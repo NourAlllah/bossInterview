@@ -17,6 +17,10 @@ import  FooterContainer  from './Components/Containers/footer';
 import Faqs from './Pages/Faqs';
 import NotFound from './Components/NotFound';
 import signUpIn from './Components/signUpIn';
+import jobSearch from './Components/jobSearch/jobSearch';
+import searchBar from './Components/searchBar';
+import search from './Components/search';
+
 
 
 
@@ -42,6 +46,9 @@ return (
             <Route path='/404' component={NotFound}/>
             <Route path='/signupin' component={signUpIn}/>
             <Route path='/profile' component= {Profile}/>
+            <Route path='/jobsearch' component= {jobSearch}/>
+            <Route path='/searchbar' component= {searchBar}/>
+            <Route path='/search' component= {search}/>
             <Redirect to='/404'/>
          </Switch>
 
@@ -71,6 +78,10 @@ import NotFound from './Components/NotFound';
 import { AccountContext } from './Components/accountBox/accountContext';
 import Home from './Pages/Home';
 import { SignupForm } from './Components/accountBox/signupForm';
+import Search from './Components/search';
+import Search from './Components/Search';
+import jobSearch from './Components/jobSearch/jobSearch';
+import searchBar from './Components/searchBar';
 
           <AppContainer>
              <AccountBox />
