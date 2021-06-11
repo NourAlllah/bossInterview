@@ -9,6 +9,8 @@ import { BrowserRouter as Router,  Redirect,  Route ,Switch} from 'react-router-
 import Profile from './Components/Profile/Profile';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar/Navbar';
+import RateUs from './Components/RateUs/RateUs';
+import BookInterview from './Components/BookInterview/BookInterview';
 import HowDoesItWork from './Pages/Howdoesitworks';
 import AboutUs from './Pages/Aboutus';
 import ContactUs from './Pages/Contactus';
@@ -20,6 +22,7 @@ import signUpIn from './Components/signUpIn';
 import jobSearch from './Components/jobSearch/jobSearch';
 import searchBar from './Components/searchBar';
 import search from './Components/search';
+import RateRun from './Components/RateUs2/RateRun';
 
 
 
@@ -46,6 +49,9 @@ return (
             <Route path='/404' component={NotFound}/>
             <Route path='/signupin' component={signUpIn}/>
             <Route path='/profile' component= {Profile}/>
+            <Route path='/rate' component= {RateUs}/>
+            <Route path='/book' component= {BookInterview}/>
+            <Route path='/pop' component= {RateRun}/>
             <Route path='/jobsearch' component= {jobSearch}/>
             <Route path='/searchbar' component= {searchBar}/>
             <Route path='/search' component= {search}/>
