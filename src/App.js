@@ -17,9 +17,8 @@ import  FooterContainer  from './Components/Containers/footer';
 import Faqs from './Pages/Faqs';
 import NotFound from './Components/NotFound';
 import signUpIn from './Components/signUpIn';
-import jobSearch from './Components/jobSearch/jobSearch';
-import searchBar from './Components/searchBar';
-import search from './Components/search';
+import afterLogin from './Components/afterLoginHome/afterLogin';
+
 
 
 
@@ -46,9 +45,7 @@ return (
             <Route path='/404' component={NotFound}/>
             <Route path='/signupin' component={signUpIn}/>
             <Route path='/profile' component= {Profile}/>
-            <Route path='/jobsearch' component= {jobSearch}/>
-            <Route path='/searchbar' component= {searchBar}/>
-            <Route path='/search' component= {search}/>
+            <Route path='/login' component= {afterLogin}/>
             <Redirect to='/404'/>
          </Switch>
 
