@@ -19,10 +19,8 @@ import  FooterContainer  from './Components/Containers/footer';
 import Faqs from './Pages/Faqs';
 import NotFound from './Components/NotFound';
 import signUpIn from './Components/signUpIn';
-import jobSearch from './Components/jobSearch/jobSearch';
-import searchBar from './Components/searchBar';
-import search from './Components/search';
 import RateRun from './Components/RateUs2/RateRun';
+import afterLogin from './Components/afterLoginHome/afterLogin';
 
 
 
@@ -52,9 +50,7 @@ return (
             <Route path='/rate' component= {RateUs}/>
             <Route path='/book' component= {BookInterview}/>
             <Route path='/pop' component= {RateRun}/>
-            <Route path='/jobsearch' component= {jobSearch}/>
-            <Route path='/searchbar' component= {searchBar}/>
-            <Route path='/search' component= {search}/>
+            <Route path='/login' component= {afterLogin}/>
             <Redirect to='/404'/>
          </Switch>
 
