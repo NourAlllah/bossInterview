@@ -21,7 +21,7 @@ import NotFound from './Components/NotFound';
 import signUpIn from './Components/signUpIn';
 import RateRun from './Components/RateUs2/RateRun';
 import afterLogin from './Components/afterLoginHome/afterLogin';
-
+import SearchPage from './Components/SearchPage/SearchPage';
 
 
 
@@ -51,6 +51,7 @@ return (
             <Route path='/book' component= {BookInterview}/>
             <Route path='/pop' component= {RateRun}/>
             <Route path='/login' component= {afterLogin}/>
+            <Route path='/searchpage' component= {SearchPage}/>
             <Redirect to='/404'/>
          </Switch>
 
