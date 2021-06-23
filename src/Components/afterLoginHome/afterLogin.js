@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBBadge , MDBSpinner } from 'mdb-react-ui-kit';
+import { MDBBadge , MDBSpinner , MDBBtn } from 'mdb-react-ui-kit';
 import './afterLogin.css';
 
 
@@ -17,9 +17,8 @@ import './afterLogin.css';
               <div className='text-white'>
               <h1 className='mb-3'> Welcome Boss! </h1>
           <h3 className='mb-4'>   Good impression count. Awkwardness can occur. Outcomes are unpredictable. </h3> 
-         <MDBBadge pill color= ' rgba(251, 146, 36, 0.8) 'type="submit" className='btn-l' > <MDBSpinner grow size='sm'>  <span className='visually-hidden'>Loading...</span>   </MDBSpinner> Start Your Interview </MDBBadge> 
-         <MDBBadge pill color= ' rgba(251, 146, 36, 0.8) 'type="submit" className='btn-l' >  <MDBSpinner grow size='sm'>  <span className='visually-hidden'>Loading...</span>   </MDBSpinner> Book Your Interview</MDBBadge> 
-
+         <MDBBtn pill color= ' rgba(251, 146, 36, 0.8) '  type="submit" className='btn-l' > <MDBSpinner grow size='sm'>  <span className='visually-hidden'>Loading...</span>   </MDBSpinner> Start Your Interview </MDBBtn> 
+         <MDBBtn pill color= ' rgba(251, 146, 36, 0.8) ' type="submit" className='btn-l' >  <MDBSpinner grow size='sm'>  <span className='visually-hidden'>Loading...</span>   </MDBSpinner> Book Your Interview</MDBBtn> 
               </div>
             </div>
           </div>
