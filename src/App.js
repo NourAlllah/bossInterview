@@ -12,9 +12,10 @@ import AboutUs from './Pages/Aboutus';
 import ContactUs from './Pages/Contactus';
 import SubcribeYourMail from './Pages/Subscribemail';
 import  FooterContainer  from './Components/Containers/footer'; 
-import Faqs from './Pages/Faqs';
+import Questions from './Pages/Questions';
 import NotFound from './Components/NotFound';
 import signUpIn from './Components/signUpIn';
+import InterviewPage from './Components/InterviewPage';
 
 
 
@@ -34,18 +35,14 @@ return (
             <Route path='/about'   component={AboutUs} />
             <Route path='/contact'  component={ContactUs} />
             <Route path='/subscribe'   component={SubcribeYourMail} />
-            <Route path='/faqs' component={Faqs}/>
+            <Route path='/faqs' component={Questions}/>
             <Route path='/404' component={NotFound}/>
             <Route path='/signupin' component={signUpIn}/>
+            <Route path='/InterviewNow' component={InterviewPage}/>
             <Redirect to='/404'/>
          </Switch>
 
-        <br/>
-    <br/>  <br/>
-    <br/>  <br/>
-    <br/>  <br/>
-    <br/>  <br/>
-    <br/>      
+    
     <FooterContainer/>  
 
           

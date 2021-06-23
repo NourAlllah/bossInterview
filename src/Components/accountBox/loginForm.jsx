@@ -16,7 +16,7 @@ export function LoginForm(props) {
 
   return (
     <BoxContainer>
-      <FormContainer>
+      <FormContainer >
         <Input type="email" placeholder="Email" />
         <Input type="password" placeholder="Password" />
       </FormContainer>

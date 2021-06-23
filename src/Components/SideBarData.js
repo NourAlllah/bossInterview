@@ -11,19 +11,6 @@ export const SideBarData =[
         exact : true 
     },
     {
-        title : 'How does it work?',
-        path : '/how',
-        icon : <i className="far fa-question-circle"></i>,
-        cName : 'nav-text' 
-
-    },
-    {
-        title : 'Subscrube your Mail',
-        path : '/subscribe',
-        icon : <i className="fas fa-envelope-square"></i>,
-        cName : 'nav-text' 
-    },
-    {
         title : 'About Us',
         path : '/about',
         icon : <i className="fas fa-user-friends"></i>,
@@ -34,6 +21,19 @@ export const SideBarData =[
         title : 'Contact Us',
         path : '/contact',
         icon : <i className="fas fa-address-card"></i>,
+        cName : 'nav-text' 
+
+    },
+    {
+        title : 'Subscrube your Mail',
+        path : '/subscribe',
+        icon : <i className="fas fa-envelope-square"></i>,
+        cName : 'nav-text' 
+    }, 
+    {
+        title : 'How does it work?',
+        path : '/how',
+        icon : <i className="far fa-question-circle"></i>,
         cName : 'nav-text' 
 
     },
