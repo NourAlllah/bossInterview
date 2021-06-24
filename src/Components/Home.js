@@ -2,7 +2,9 @@ import React from 'react';
 import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutSlider from './Aboutslider/AboutSlider';
-
+import Fade from 'react-reveal/Fade';
+import PressHereButton from './PressHereButton';
+/* Pages */
 
 
 
@@ -40,21 +42,37 @@ function Home() {
                 
              </div>  
              <div className='subscribe-mail-form'>
-                    <input className='input-email' type="email" placeholder="Enter your Email" aria-required='true'  aria-invalid='true'/>
+                    <input className='input-email' type="email" placeholder="  Enter your Email" aria-required='true'  aria-invalid='true'/>
                     <button className='subscribe-but' variant="primary" type="submit">
                         Submit
                     </button>
              </div>
          </div>
-         <div className='section2-howitworks'>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-
-         </div>
+         
+         <div className='section2-howitworks'>  
+        </div>  
+         <br/>
+         <br/>
+         <br/>
          <div className='section3-aboutus'>
+            <h1 className='topic'>About Us</h1>
+            <Fade top>
+               <h2 className='header'> Our Mission</h2>
+            </Fade>
+            <p className='about-content'> Development of mock interviews covers all Hr sides , languages and discovering 
+                selves in points of strenghts and weaknesses thou & Soon in all work fields.
+                First aim is ice breaking of interview's fear and anxiety.
+            </p>
+            <Fade top>
+               <h2 className='header'> Our Vission</h2>
+            </Fade>
+            <p className='about-content'>Help our clients know all about their dream job or even discover his own dream 
+                dream job. Provide our clients the confidence and tips needed to break ice of 
+                his real life interviews.
+            </p>
+
             <AboutSlider/>
+            <PressHereButton/>
          </div>
 
     </>

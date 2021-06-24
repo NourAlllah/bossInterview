@@ -60,7 +60,7 @@ video{
      color: #fcdc54;
      font-size: 100px ;
      font-weight: bold;
-     margin-left: 24rem;
+     margin-left: -35rem;
      margin-top: -128px;
   }
   .text-3{
@@ -69,7 +69,7 @@ video{
      display: table;
      font-weight: bold;
      margin-left: 62px;
-     margin-top: -40px;
+     margin-top: -60px;
   }
   .text-33{
      color:  #2A1A5E;
@@ -156,7 +156,7 @@ video{
      padding: 10px 20px;
      text-decoration: none;
      cursor: pointer;
-     margin-top: 2rem;
+     margin-top: 3rem;
      margin-left:  63rem;
  }
  .subscribe-but:hover {
@@ -164,9 +164,23 @@ video{
      border-radius: 50px ;
  }
  
- 
- 
- 
+ .topic{
+     color: #fd9a34;
+    text-align: center;
+    margin-right: 30px;
+    font-weight: bold;
+ }
+ .header{
+     color: #fcdc54;
+     margin-left: 40px;
+     font-weight: bold;
+ }
+ .about-content{
+    color:#2A1A5E;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+ }
  
  
  

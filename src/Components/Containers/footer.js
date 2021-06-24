@@ -11,7 +11,7 @@ export  function FooterContainer (){
              <p className='text-55'> & industry insights, delivered to your inbox.</p>
                 
              <div className='subscribe-mail-form-footer'>
-                    <input className='input-email-footer' type="email" placeholder="Enter your Email" aria-required='true'  aria-invalid='true'/>
+                    <input className='input-email-footer' type="email" placeholder="  Enter your Email" aria-required='true'  aria-invalid='true'/>
                     <button className='subscribe-but-footer' variant="primary" type="submit">
                         Submit
                     </button>

@@ -19,14 +19,14 @@ import { SideBarData } from './../SideBarData';
                  <Link to='#' className='menu-icon' >
                     <i className="fas fa-bars" onClick={showSidebar} ></i>
                  </Link> 
-             <Link  to ='/about' >
-            <img className='navbar-logo' src='../logo.png' alt ='../logo192.png'/>
-            </Link>
-            <button className='navbar-but'>   
-                 <Link to='/signupin' className='nav-links'>
-                     Log In
-                 </Link>        
-            </button>         
+                 <Link  to ='/about' >
+                 <img className='navbar-logo' src='../logo.png' alt ='../logo192.png'/>
+                 </Link>
+                 <button className='navbar-but'>   
+                    <Link to='/signupin' className='nav-links'>
+                        Log In
+                    </Link>        
+                 </button>         
             </div>           
                          
                         
@@ -38,7 +38,7 @@ import { SideBarData } from './../SideBarData';
                 
                 <ul className='navbar-items' onClick={showSidebar} >
                     <li className ='navbar-toggle'>
-                        <Link to='#'  exact ='true' className='menu-icon '>
+                         <Link to='#'  exact ='true' className='menu-icon '>
                             <i className="fas fa-times"></i>
                          </Link>
                     </li>

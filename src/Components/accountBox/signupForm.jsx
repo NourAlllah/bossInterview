@@ -15,7 +15,7 @@ export function SignupForm(props) {
 
   return (
     <BoxContainer>
-      <FormContainer>
+      <FormContainer  >
         <Input type="text" placeholder="First Name" />
         <Input type="text" placeholder="Second Name" />
         <Input type="email" placeholder="Email" />
@@ -34,3 +34,4 @@ export function SignupForm(props) {
     </BoxContainer>
   );
 }
+/* href='/UserHome' */

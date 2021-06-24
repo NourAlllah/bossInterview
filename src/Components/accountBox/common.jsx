@@ -14,23 +14,6 @@ export const FormContainer = styled.form`
   flex-direction: column;
   box-shadow: 0px 0px 2.5px rgba(15, 15, 15, 0.19);
 `;
- 
-export const MutedLink = styled.a`  
-  font-size: 11px;
-  font-family: 'Berlin Sans FB';
-  color: rgba(200, 200, 200, 0.8);
-  font-weight: 300;
-  text-decoration: none;
-`;
-
-export const BoldLink = styled.a`
-  font-size: 11px;
-  font-family: 'Berlin Sans FB';
-  color: rgb(251,146,36);
-  font-weight: 300;
-  text-decoration: none;
-  margin: 0 4px;
-`;
 
 export const Input = styled.input`
   width: 100%;
@@ -56,6 +39,24 @@ export const Input = styled.input`
     border-bottom: 2px solid rgb(251,146,36);
   }
 `;
+ 
+export const MutedLink = styled.a`  
+  font-size: 11px;
+  font-family: 'Berlin Sans FB';
+  color: rgba(200, 200, 200, 0.8);
+  font-weight: 300;
+  text-decoration: none;
+`;
+
+export const BoldLink = styled.a`
+  font-size: 11px;
+  font-family: 'Berlin Sans FB';
+  color: rgb(251,146,36);
+  font-weight: 300;
+  text-decoration: none;
+  margin: 0 4px;
+`;
+
 
 export const SubmitButton = styled.button`
   width: 100%;
