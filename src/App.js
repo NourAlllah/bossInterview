@@ -23,6 +23,8 @@ import InterviewPage from './Components/InterviewPage';
 import RateRun from './Components/RateUs2/RateRun';
 import afterLogin from './Components/afterLoginHome/afterLogin';
 import SearchPage from './Components/SearchPage/SearchPage';
+import Navbar from './Components/Navbar/Navbar';
+import  FooterContainer  from './Components/Containers/footer';
 
 
 
@@ -35,10 +37,8 @@ return (
 
 <Router>
     
-    
-
-  
-     
+      
+        <Navbar/>
         <Switch>
             <Route  path='/'  exact component={Home} />
             <Route path='/how'  component={ HowDoesItWork} />
@@ -50,14 +50,8 @@ return (
             <Route path='/signupin' component={signUpIn}/>
             <Route path='/InterviewNow' component={InterviewPage}/>
             <Redirect to='/404'/>
-         </Switch>
-
-    
-      
-
-          
-    <br/>
-    <br/>      
+         </Switch>   
+         <FooterContainer/>   
     </Router>
     
     
