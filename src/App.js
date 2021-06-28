@@ -6,16 +6,15 @@ import { BrowserRouter as Router,  Redirect,  Route ,Switch} from 'react-router-
 
 
 /* PAGES */
-import Profile from './Components/Profile/Profile';
+import Profile from './Components/profile/Profile';
 import Home from './Components/Home';
-import Navbar from './Components/Navbar/Navbar';
 import RateUs from './Components/RateUs/RateUs';
 import BookInterview from './Components/BookInterview/BookInterview';
 import HowDoesItWork from './Pages/Howdoesitworks';
 import AboutUs from './Pages/Aboutus';
 import ContactUs from './Pages/Contactus';
 import SubcribeYourMail from './Pages/Subscribemail';
-import  FooterContainer  from './Components/Containers/footer'; 
+
 import Questions from './Pages/Questions';
 import NotFound from './Components/NotFound';
 import signUpIn from './Components/signUpIn';
@@ -36,7 +35,7 @@ return (
 
 <Router>
     
-     <Navbar/>
+    
 
   
      
@@ -54,7 +53,7 @@ return (
          </Switch>
 
     
-    <FooterContainer/>  
+      
 
           
     <br/>

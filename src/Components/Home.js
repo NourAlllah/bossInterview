@@ -1,16 +1,19 @@
 import React from 'react';
 import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AboutSlider from './Aboutslider/AboutSlider';
 import Fade from 'react-reveal/Fade';
-import PressHereButton from './PressHereButton';
 /* Pages */
+import Navbar from '../Components/Navbar/Navbar';
+import AboutSlider from './Aboutslider/AboutSlider';
+import PressHereButton from './PressHereButton';
+import  FooterContainer  from '../Components/Containers/footer'; 
 
 
 
 function Home() {
     return (     
      <>    
+         <Navbar/>
         <div className='section1-container'>
             <video src='home-sec1-v3.mp4' autoPlay loop muted />
             <div className='sec1-text'>
@@ -74,7 +77,7 @@ function Home() {
             <AboutSlider/>
             <PressHereButton/>
          </div>
-
+         <FooterContainer/>
     </>
     )
 }

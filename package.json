@@ -20,12 +20,9 @@
     "bootstrap": "^5.0.0",
     "date-fns": "^2.22.1",
     "framer-motion": "^4.1.17",
-
-    "node-sass": "^6.0.0",
-
     "mdb-react-ui-kit": "^1.0.0-beta5",
     "mdbreact": "^5.0.2",
-
+    "node-sass": "^6.0.0",
     "react": "^17.0.0",
     "react-animate-text": "^0.4.0",
     "react-bootstrap": "^1.6.0",
@@ -36,9 +33,7 @@
     "react-icons": "^4.2.0",
     "react-responsive": "^8.2.0",
     "react-reveal": "^1.2.2",
-
     "react-router": "^5.2.0",
-
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.0",
     "rxjs": "^7.1.0",
