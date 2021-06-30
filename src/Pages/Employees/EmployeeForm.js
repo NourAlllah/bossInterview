@@ -5,9 +5,9 @@ import { useForm, Form } from '../../Components/useForm';
 import * as employeeService from "../../services/employeeServices";
 
 
-const genderItems = [
-    { id: 'male', title: 'Male' },
-    { id: 'female', title: 'Female' },
+const statusItems = [
+    { id: 'student', title: 'Student' },
+    { id: 'graduate', title: 'Graduate' },
 
 ]
 
@@ -17,7 +17,7 @@ const initialFValues = {
     email: '',
     mobile: '',
     city: '',
-    gender: 'male',
+    status: 'student',
     departmentId: '',
     hireDate: new Date(),
     isPermanent: false,
@@ -61,6 +61,7 @@ export default function EmployeeForm() {
 
     return (
         <Form onSubmit={handleSubmit}>
+
             <Grid container>
                 <Grid item xs={6}>
                     <Controls.Input
@@ -94,11 +95,11 @@ export default function EmployeeForm() {
                 </Grid>
                 <Grid item xs={6}>
                     <Controls.RadioGroup
-                        name="gender"
-                        label="Gender"
-                        value={values.gender}
+                        name="status"
+                        label="Status"
+                        value={values.status}
                         onChange={handleInputChange}
-                        items={genderItems}
+                        items={statusItems}
                     />
                     <Controls.Select
                         name="Industry"

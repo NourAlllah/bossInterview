@@ -1,21 +1,14 @@
-
-import EmployeeFinal from './Pages/Employees/EmployeeFinal';
-
-
-
-
-
-
-
 import React from 'react';
 import './App.css';
 import "./Components/fonawesome";
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import EmployeeFinal from './Pages/Employees/EmployeeFinal';
+import FooterContainer from './Components/Containers/footer';
 
-
+import Navbar from './Components/Navbar/Navbar';
 
 /* PAGES */
-import Profile from './Components/profile/Profile';
+
 import Home from './Components/Home';
 
 import RateUs from './Components/RateUs/RateUs';
@@ -48,7 +41,7 @@ function App() {
 
 
 
-
+        <Navbar />
 
         <Switch>
           <Route path='/' exact component={Home} />
@@ -66,7 +59,7 @@ function App() {
         </Switch>
 
 
-
+        <FooterContainer />
 
 
         <br />

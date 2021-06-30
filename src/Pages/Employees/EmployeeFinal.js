@@ -1,7 +1,11 @@
 import Employees from "./Employees";
 import { makeStyles, CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core';
 
+
 const theme = createMuiTheme({
+
+
+
     palette: {
         primary: {
             main: "#fd9a34",
@@ -13,8 +17,11 @@ const theme = createMuiTheme({
         },
         background: {
             default: "#f4f5fd"
+
         },
+
     },
+
     overrides: {
         MuiAppBar: {
             root: {
@@ -32,9 +39,13 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
     appMain: {
+
+        backgroundColor: '#E0E0E0',
+        paddingBottom: '100px',
+        paddingTop: '100px',
         paddingLeft: '100px',
         paddingRight: '100px',
-        width: '100%'
+        width: '100%',
     }
 })
 
@@ -44,6 +55,7 @@ function EmployeeFinal() {
     const classes = useStyles();
 
     return (
+
 
         <ThemeProvider theme={theme}>
             <div className={classes.appMain}>
@@ -55,7 +67,9 @@ function EmployeeFinal() {
             <CssBaseline />
         </ThemeProvider>
 
+
     );
+
 
 }
 
