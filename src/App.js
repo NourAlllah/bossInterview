@@ -8,16 +8,24 @@ import FooterContainer from './Components/Containers/footer';
 import Navbar from './Components/Navbar/Navbar';
 
 /* PAGES */
+<<<<<<< HEAD
 
 import Home from './Components/Home';
 
+=======
+import Profile from './Components/profile/Profile';
+import Home from './Components/Home';
+>>>>>>> f5471e435bb232a3a2f9ef50f130288dd4e3f263
 import RateUs from './Components/RateUs/RateUs';
 import BookInterview from './Components/BookInterview/BookInterview';
 import HowDoesItWork from './Pages/Howdoesitworks';
 import AboutUs from './Pages/Aboutus';
 import ContactUs from './Pages/Contactus';
 import SubcribeYourMail from './Pages/Subscribemail';
+<<<<<<< HEAD
 import Profile from './Pages/Employees/Profile';
+=======
+>>>>>>> f5471e435bb232a3a2f9ef50f130288dd4e3f263
 
 import Questions from './Pages/Questions';
 import NotFound from './Components/NotFound';
@@ -27,6 +35,8 @@ import InterviewPage from './Components/InterviewPage';
 import RateRun from './Components/RateUs2/RateRun';
 import afterLogin from './Components/afterLoginHome/afterLogin';
 import SearchPage from './Components/SearchPage/SearchPage';
+import Navbar from './Components/Navbar/Navbar';
+import  FooterContainer  from './Components/Containers/footer';
 
 
 
@@ -40,6 +50,7 @@ function App() {
       <Router>
 
 
+<<<<<<< HEAD
 
         <Navbar />
 
@@ -69,6 +80,30 @@ function App() {
 
     </>
   );
+=======
+<Router>
+    
+      
+        <Navbar/>
+        <Switch>
+            <Route  path='/'  exact component={Home} />
+            <Route path='/how'  component={ HowDoesItWork} />
+            <Route path='/about'   component={AboutUs} />
+            <Route path='/contact'  component={ContactUs} />
+            <Route path='/subscribe'   component={SubcribeYourMail} />
+            <Route path='/faqs' component={Questions}/>
+            <Route path='/404' component={NotFound}/>
+            <Route path='/signupin' component={signUpIn}/>
+            <Route path='/InterviewNow' component={InterviewPage}/>
+            <Redirect to='/404'/>
+         </Switch>   
+         <FooterContainer/>   
+    </Router>
+    
+    
+</>
+);
+>>>>>>> f5471e435bb232a3a2f9ef50f130288dd4e3f263
 }
 export default App;
 
